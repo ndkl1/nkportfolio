@@ -291,3 +291,97 @@ body {
     }
 
 }
+ /****** FORM *******/
+.title{
+    font-size: 40px;
+    font-family: 'Source Serif Pro', serif;
+    width: 250px;
+    margin: 0;
+    padding-left: 100px;
+}
+.contact_left{
+    margin-left: 150px;
+    margin-top: 50px;
+    float: left;
+    padding-bottom: 20px;
+}
+.kontakt{
+    padding: 10px 20px;
+    cursor: pointer;
+    color: black;
+    background: white;
+    border-radius: 0.4rem;
+    font-family: 'Source Serif Pro', serif;
+    text-decoration: none;
+    font-size: 20px;
+}
+.kontakt:hover{
+    background: #e9ccce;
+    color: white;
+    transition: 0.3s all linear;
+}
+.soc{
+    padding-top: 20px;
+}
+.soc a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Source Serif Pro', serif;;
+    padding: 20px;
+}
+.soc a:hover{
+    color: white;
+}
+
+.contact_form{
+    max-width: 600px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    row-gap: 1rem;
+}
+
+.contact_form input, .contact_form textarea{
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    padding: 15px;
+    color: grey;
+    background: white;
+    border-radius: 0.4rem;
+    font-family: Arial;
+}
+
+.btn1{
+    width: 120px;
+    margin: auto;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 12px;
+    background: #e9ccce;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    border: 1px solid;
+    font-family: Impact, fantasy;
+}
+
+.btn1:hover{
+    background: black;
+    color: white;
+    transition: 0.3s all linear;
+}
+
+.contact_right{
+    background: hsla(0, 0%, 100%, 0.6);
+    max-width: 700px;
+    float: right;
+    width: 100%;
+    margin-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
