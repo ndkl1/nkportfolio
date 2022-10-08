@@ -90,17 +90,17 @@ h1{
     font-size: 21px;
     padding: 10px 0 10px 100px;
 }
-.link{
+.link, .link1{
     text-decoration: none;
     color: #e9ccce;
     font-weight: bold;
     font-family:'Source Serif Pro', serif;
-    font-size: 32px;
+    font-size: 25px;
     padding: 13px 50px;
     position: relative;
     margin-left: 100px;
 }
-.link::before, .link::after{
+.link::before, .link::after, .link1::before, .link1::after{
     background-color: hsla(0,0%,100%,0.5);
     border: 2px solid black;
     content: '';
@@ -113,11 +113,41 @@ h1{
     transition: transform 0.3s ease;
     border-radius: 20px;
 }
-.link:hover::after{
+.link:hover::after, .link1:hover::after{
      transform: translate(-5px, -5px);
 }
-.link:hover::before{
+.link:hover::before, .link1:hover::before{
     transform: translate(5px, 5px);
+}
+
+.link1{
+    float: right;
+    margin: 0 100px 60px 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.desc{
+    font-family:'Source Serif Pro', serif;
+    font-size: 22px;
+    background-color: white;
+    height: 450px;
+    padding: 80px 60px 0 60px;
+    margin: 30px 6% 30px 5%;
+    overflow: auto;
+    border-radius: 10px;
+    text-align: -moz-center;
+}
+
+.pic{
+    height: 440px;
+    margin-top: 30px;
+    margin-left: 6%;
+    border: 40px solid white;
+    border-radius: 10px;
 }
 
 @supports (backdrop-filter: blur(1rem)) {
