@@ -126,29 +126,130 @@ h1{
 }
 
 .container{
-    display: flex;
     justify-content: center;
 }
 
 .desc{
     font-family:'Source Serif Pro', serif;
+    overflow: auto;
     font-size: 22px;
     background-color: white;
-    height: 450px;
+    height: 200px;
     padding: 80px 60px 0 60px;
     margin: 30px 6% 30px 5%;
-    overflow: auto;
     border-radius: 10px;
-    text-align: -moz-center;
 }
 
 .pic{
-    height: 440px;
-    margin-top: 30px;
-    margin-left: 6%;
+    float: left;
+    overflow: hidden;
+    height: 300px;
+    margin: 0 5% 0 6%;
     border: 40px solid white;
     border-radius: 10px;
 }
+
+/******** PROJECTS ********/
+.projekti{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.pr{
+    width: 440px;
+    height: 320px;
+    padding: 14px;
+    border-radius: 23px;
+    background-color: white;
+    position: relative;
+}
+
+.pr:hover{
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.15);
+}
+
+.picpr{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    opacity: 1;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+
+.ppr{
+    text-align: center;
+    font-family:'Source Serif Pro', serif;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.abtpr{
+    text-align: center;
+    font-family:'Source Serif Pro', serif;
+    font-size: 20px;
+}
+
+.descpr{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+}
+
+.pr:hover .picpr{
+    opacity: 0.2;
+}
+
+.pr:hover .descpr{
+    opacity: 1;
+}
+
+.goto{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.linkpr{
+    text-decoration: none;
+    border: 2px solid #e9ccce;
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    font-weight: bold;
+    font-family:'Source Serif Pro', serif;
+    font-size: 20px;
+    padding: 10px 50px;
+}
+
+.ghcode{
+    text-decoration: none;
+    background-color: #e9ccce;
+    border: 2px solid #e9ccce;
+    border-radius: 12px;
+    color: black;
+    font-weight: bold;
+    font-family:'Source Serif Pro', serif;
+    font-size: 20px;
+    padding: 10px 50px;
+}
+
+.linkpr:hover{
+    background-color: #e9ccce;
+    
+}
+
+.ghcode:hover{
+    border: 2px solid #e9ccce;
+    background-color: white;
+}
+
 
 @supports (backdrop-filter: blur(1rem)) {
     .primary-navigation{
