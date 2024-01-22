@@ -100,8 +100,8 @@ h1 {
   color: #22181a;
   font-weight: 500;
   font-family: "Source Serif Pro", serif;
-  font-size: 25px;
-  padding: 13px 50px;
+  font-size: 23px;
+  padding: 13px 38px;
   position: relative;
   margin-left: 100px;
   border: 2px solid #22181a;
@@ -150,8 +150,7 @@ h1 {
   font-size: 20px;
   background-color: white;
   color: #22181a;
-  height: 500px;
-  padding: 8px 60px 0 60px;
+  padding: 8px 60px;
   margin: 30px 6% 30px 5%;
   border-radius: 10px;
 }
@@ -159,7 +158,7 @@ h1 {
 .pic {
   float: left;
   overflow: hidden;
-  height: 300px;
+  height: 310px;
   margin: 0 5% 0 6%;
   border: 40px solid white;
   border-radius: 10px;
@@ -169,6 +168,7 @@ h1 {
 .projekti {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 40px;
   margin: 40px 80px;
 }
@@ -189,7 +189,7 @@ h1 {
 
 .picpr {
   width: 100%;
-  height: auto;
+  height: 221px;
   border-radius: 12px;
   opacity: 1;
   transition: 0.5s ease;
@@ -219,6 +219,7 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 320px;
+  height: 238px;
 }
 
 .pr:hover .picpr {
@@ -232,12 +233,7 @@ h1 {
 .goto {
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
-}
-
-.goto2 {
-  text-align: left;
-  margin-top: 60px;
+  margin-top: 22px;
 }
 
 .linkpr {
